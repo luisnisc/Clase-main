@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {ViewTransitions} from 'astro:transitions';
+---
+
+<Layout title="Apuntes">
+	<main transition:name="transicion" transition:animate="fade">
+		<div class="text-white " >Hola mundo</div>
+	</main>
+	<ViewTransitions/>
+</Layout>
+
+
+	

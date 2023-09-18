@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Bbdd from "./bbdd.astro";
+import {ViewTransitions} from 'astro:transitions';
+---
+<Layout title="Asignaturas">
+<main transition:animate="fade" transition:name="transicion">
+<div class="flex flex-col items-center my-40" >
+<a href="/bbdd"><button class=""id="nombres-a">Bases de datos</button></a><br>
+<a href="/programacion"><button class=""id="nombres-a">Programación</button></a><br>
+<a href="/computacionN"><button class=""id="nombres-a">Computacion en la nube</button></a>
+</div>
+<ViewTransitions/>
+</main>
+</Layout>
+<style>
+    #nombres-a{
+        border: 1px solid white;
+        color: white;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 1em;
+        margin-left: ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    #nombres-a:hover{
+        color: rgb(136, 57, 173);
+        background-color: white;
+        transition: 600ms;
+        box-shadow: 3px 3px 3px rgb(179, 179, 179);
+     
+    }
+     
+   
+</style>
